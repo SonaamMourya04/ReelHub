@@ -1,6 +1,6 @@
 const Login =()=>{
     return (
-        <div>Login</div>
+        <div className="text-8xl">Login</div>
     )
 };
 export default Login;
