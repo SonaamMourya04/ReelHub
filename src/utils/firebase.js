@@ -11,7 +11,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyCbtBnGXMadKCooOiQlEMrsyplJrKp04T8",
   authDomain: "reelhub-52a1c.firebaseapp.com",
   projectId: "reelhub-52a1c",
-  storageBucket: "reelhub-52a1c.firebasestorage.app",
+  storageBucket: "reelhub-52a1c.appspot.com",
   messagingSenderId: "194399151975",
   appId: "1:194399151975:web:f57a0b168b68243e5a31c2",
   measurementId: "G-MVZZD8VNLF"
@@ -20,4 +20,4 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-export const auth = getAuth();
+export const auth = getAuth(app);
