@@ -9,5 +9,8 @@
 -useRef Hook
 -Firebase
 -Deploying our app to production
--Create SignUp  user Account
+-Create SignUp  User Account
+-Implement Sign In user Api
+-Created redux store with userslice
+-
  
