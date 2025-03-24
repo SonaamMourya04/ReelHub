@@ -16,7 +16,7 @@ import {auth} from  "../utils/firebase";
   const handleButtonClick = ()=>{
 
     //validate the form data
-  const message = checkValidData(email.current.value,password.current.value);
+  const message = checkValidData(email.current.value , password.current.value);
    setErrorMessage(message);
 
    if(message)return;
