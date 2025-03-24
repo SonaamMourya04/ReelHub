@@ -12,5 +12,9 @@
 -Create SignUp  User Account
 -Implement Sign In user Api
 -Created redux store with userslice
--
+-Implemented signout
+-update profile api call
+- Fetch from TMBD movies
+
+
  
