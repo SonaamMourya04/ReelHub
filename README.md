@@ -14,7 +14,12 @@
 -Created redux store with userslice
 -Implemented signout
 -update profile api call
-- Fetch from TMBD movies
+-Bug Fix:Sign up user displayName and profile picture updates
+-Bug Fix:if the user is not logged  in redirect/browse to Login Page and  vice-versa
+-Unsubscribed to the onAuthStateChanged callback
+-Add hardcoded value to the constants file
+
+
 
 
  
