@@ -1,6 +1,5 @@
 import Logo from "../utils/Logo.png";
 import { signOut } from "firebase/auth";
-import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
@@ -23,7 +22,8 @@ const Header = () => {
       .catch((error) => {
         navigate("/error");
       }); 
-  };useEffect(() => {
+  };
+  useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         const { uid, email, displayName, photoURL } = user;
@@ -39,6 +39,8 @@ const Header = () => {
       } else {
         // User is signed out
         dispatch(removeUser());
+        localStorage.clear();
+        sessionStorage.clear();
         navigate("/")
       }
     });
