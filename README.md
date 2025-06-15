@@ -26,6 +26,8 @@
 -fetch data for trailer video
 -update the store with video data
 -embedded utube video and make it auto play and mute
+-build secondary component
+
 
 
  
